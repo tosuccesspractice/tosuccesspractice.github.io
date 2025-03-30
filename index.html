@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>مرحباً بك</title>
+  <title>Contact - ToSuccessPractice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #008cba;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005f7f;
+    }
+  </style>
 </head>
 <body>
-  <h1>مرحباً بكم في موقع الدعم لتطبيقاتنا</h1>
-  <p>لأي استفسار، يرجى التواصل معنا عبر البريد: <a href="mailto:tosuccesspractice@gmail.com">tosuccesspractice@gmail.com</a></p>
+
+  <h1>Contactez-nous</h1>
+  <p>Utilisez ce formulaire pour nous envoyer un message</p>
+
+  <form action="https://formspree.io/f/mqapdblp" method="POST">
+    <input type="text" name="name" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+    <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+
 </body>
 </html>
